@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Store</title>
+  <link rel="stylesheet" href="brand.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="logo-container">
+    <img src="Pic/Logo.png" alt="Logo" class="logo-img">
+    <div class="logo" data-key="logo">جوهر البراند</div>
+  </div>
+  <nav class="nav-links">
+    <a href="#home" class="active" data-key="nav-home">الرئيسية</a>
+    <a href="#contact" data-key="nav-contact">تواصل معنا</a>
+    <a href="#men" data-key="nav-men">رجالي</a>
+    <a href="#women" data-key="nav-women">حريمي</a>
+    <a href="#youth" data-key="nav-youth">شبابي</a>
+    <a href="#kids" data-key="nav-kids">أطفالي</a>
+  </nav>
+  
+  <div class="nav-actions">
+    <button class="mode-btn">🌙</button>
+    <button class="lang-btn">AR</button>
+  </div>     
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1 data-key="hero-h1">أحدث صيحات</h1>
+    <h1 class="name" data-key="hero-name">الموضة العصرية</h1>
+    <h2 data-key="hero-name2">أناقة لا تُضاهى لجميع الأعمار</h2>
+    <p class="hero-p"  data-key="hero-p">اكتشف تشكيلتنا الفريدة من الملابس العصرية بأجود الخامات وأفضل الأسعار.</p>
+    <div class="hero-buttons">
+      <a href="#men" class="btn primary" data-key="hero-btn1">تسوق الآن</a>
+      <a href="#contact" class="btn secondary" data-key="hero-btn2">تواصل معنا</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="Pic/Logo.png" alt="Fashion">
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <div class="contact-info-box">
+      <h2 data-key="contact-title">تواصل معنا</h2>
+      <p data-key="contact-desc">نحن هنا لمساعدتك! تواصل معنا عبر أي من القنوات التالية</p>
+      
+      <div class="contact-details">
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>stylehub@email.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span dir="ltr">015 000 000 00</span>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span data-key="contact-address">القاهرة، مصر</span>
+        </div>
+      </div>
+
+      <div class="contact-social">
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/201500000000" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Men Section -->
+<section id="men" class="category-section">
+  <h2 class="section-title" data-key="men-title">👔 ملابس رجالي</h2>
+  <div class="products-grid">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Men/men1.jpg" alt="Men Shirt">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-men-1">سويتر بني بسحاب</h3>
+        <div class="product-colors">
+          <span class="color red"></span>
+          <span class="color blue"></span>
+          <span class="color black"></span>
+        </div>
+        <div class="product-sizes">
+          <span>L</span>
+          <span>M</span>
+          <span>XL</span>
+        </div>
+        <p class="product-price">299 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Men/men2.jpg" alt="Men Jacket">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-men-2">بلوزة بولو مخططة</h3>
+        <div class="product-colors">
+          <span class="color brown"></span>
+          <span class="color black"></span>
+        </div>
+        <div class="product-sizes">
+          <span>L</span>
+          <span>M</span>
+          <span>XL</span>
+        </div>
+        <p class="product-price">599 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Men/men3.jpg" alt="Men Pants">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-men-3">تيشيرت بولو كحلي</h3>
+        <div class="product-colors">
+          <span class="color blue"></span>
+          <span class="color gray"></span>
+        </div>
+        <div class="product-sizes">
+          <span>32</span>
+          <span>34</span>
+          <span>36</span>
+        </div>
+        <p class="product-price">349 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Men/men4.jpg" alt="Men T-Shirt">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-men-4">قميص كحلي كاجوال</h3>
+        <div class="product-colors">
+          <span class="color white"></span>
+          <span class="color gray"></span>
+          <span class="color navy"></span>
+        </div>
+        <div class="product-sizes">
+          <span>L</span>
+          <span>M</span>
+          <span>XL</span>
+        </div>
+        <p class="product-price">149 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Men/men5.jpg" alt="Men Hoodie">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-men-5">قميص جينز أزرق</h3>
+        <div class="product-colors">
+          <span class="color gray"></span>
+          <span class="color black"></span>
+          <span class="color red"></span>
+        </div>
+        <div class="product-sizes">
+          <span>L</span>
+          <span>M</span>
+          <span>XL</span>
+        </div>
+        <p class="product-price">279 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Men/men6.jpg" alt="Men Suit">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-men-6">تيشيرت بولو بني</h3>
+        <div class="product-colors">
+          <span class="color navy"></span>
+          <span class="color gray"></span>
+          <span class="color black"></span>
+        </div>
+        <div class="product-sizes">
+          <span>48</span>
+          <span>50</span>
+          <span>52</span>
+        </div>
+        <p class="product-price">1299 ج.م</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Women Section -->
+<section id="women" class="category-section">
+  <h2 class="section-title" data-key="women-title">👗 ملابس حريمي</h2>
+  <div class="products-grid">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Women/wom1.jpg" alt="Women Dress">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-women-1">طقم رياضي بني</h3>
+        <div class="product-colors">
+          <span class="color red"></span>
+          <span class="color black"></span>
+          <span class="color gold"></span>
+        </div>
+        <div class="product-sizes">
+          <span>S</span>
+          <span>M</span>
+          <span>L</span>
+        </div>
+        <p class="product-price">459 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Women/wom2.jpg" alt="Women Blouse">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-women-2">فستان أخضر طويل</h3>
+        <div class="product-colors">
+          <span class="color white"></span>
+          <span class="color pink"></span>
+          <span class="color blue"></span>
+        </div>
+        <div class="product-sizes">
+          <span>S</span>
+          <span>M</span>
+          <span>L</span>
+        </div>
+        <p class="product-price">229 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Women/wom3.jpg" alt="Women Jeans">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-women-3">بليزر بيج كلاسيك</h3>
+        <div class="product-colors">
+          <span class="color blue"></span>
+          <span class="color black"></span>
+        </div>
+        <div class="product-sizes">
+          <span>28</span>
+          <span>30</span>
+          <span>32</span>
+        </div>
+        <p class="product-price">319 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Women/wom4.jpg" alt="Women Skirt">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-women-4">سويتر أحمر شتوي</h3>
+        <div class="product-colors">
+          <span class="color red"></span>
+          <span class="color black"></span>
+          <span class="color beige"></span>
+        </div>
+        <div class="product-sizes">
+          <span>S</span>
+          <span>M</span>
+          <span>L</span>
+        </div>
+        <p class="product-price">189 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Women/wom5.jpg" alt="Women Cardigan">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-women-5">كارديجان أزرق أنيق</h3>
+        <div class="product-colors">
+          <span class="color beige"></span>
+          <span class="color gray"></span>
+          <span class="color pink"></span>
+        </div>
+        <div class="product-sizes">
+          <span>S</span>
+          <span>M</span>
+          <span>L</span>
+        </div>
+        <p class="product-price">259 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Women/wom6.jpg" alt="Women Abaya">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-women-6">	بلوزة بني كاجوال</h3>
+        <div class="product-colors">
+          <span class="color black"></span>
+          <span class="color navy"></span>
+          <span class="color brown"></span>
+        </div>
+        <div class="product-sizes">
+          <span>S</span>
+          <span>M</span>
+          <span>L</span>
+        </div>
+        <p class="product-price">399 ج.م</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Youth Section -->
+<section id="youth" class="category-section">
+  <h2 class="section-title" data-key="youth-title">👕 ملابس شبابي</h2>
+  <div class="products-grid">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Youth/youth1.jpg" alt="Youth T-Shirt">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-youth-1">طقم رياضي كاجوال</h3>
+        <div class="product-colors">
+          <span class="color white"></span>
+          <span class="color black"></span>
+          <span class="color red"></span>
+        </div>
+        <div class="product-sizes">
+          <span>S</span>
+          <span>M</span>
+          <span>L</span>
+        </div>
+        <p class="product-price">129 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Youth/youth2.jpg" alt="Youth Jacket">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-youth-2">	قميص كحلي وبنطلون بيج</h3>
+        <div class="product-colors">
+          <span class="color olive"></span>
+          <span class="color black"></span>
+          <span class="color navy"></span>
+        </div>
+        <div class="product-sizes">
+          <span>M</span>
+          <span>L</span>
+          <span>XL</span>
+        </div>
+        <p class="product-price">449 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Youth/youth3.jpg" alt="Youth Pants">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-youth-3">سويتر بني بياقة قميص</h3>
+        <div class="product-colors">
+          <span class="color beige"></span>
+          <span class="color gray"></span>
+          <span class="color black"></span>
+        </div>
+        <div class="product-sizes">
+          <span>30</span>
+          <span>32</span>
+          <span>34</span>
+        </div>
+        <p class="product-price">279 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Youth/youth4.jpg" alt="Youth Hoodie">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-youth-4">تيشيرت بولو رياضي</h3>
+        <div class="product-colors">
+          <span class="color gray"></span>
+          <span class="color black"></span>
+          <span class="color red"></span>
+        </div>
+        <div class="product-sizes">
+          <span>M</span>
+          <span>L</span>
+          <span>XL</span>
+        </div>
+        <p class="product-price">239 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Youth/youth5.jpg" alt="Youth Shorts">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-youth-5">	جاكيت بني كاجوال</h3>
+        <div class="product-colors">
+          <span class="color black"></span>
+          <span class="color navy"></span>
+          <span class="color gray"></span>
+        </div>
+        <div class="product-sizes">
+          <span>M</span>
+          <span>L</span>
+          <span>XL</span>
+        </div>
+        <p class="product-price">159 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Youth/youth6.jpg" alt="Youth Sweater">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-youth-6">قميص مخملي كوردروي</h3>
+        <div class="product-colors">
+          <span class="color cream"></span>
+          <span class="color gray"></span>
+          <span class="color brown"></span>
+        </div>
+        <div class="product-sizes">
+          <span>M</span>
+          <span>L</span>
+          <span>XL</span>
+        </div>
+        <p class="product-price">199 ج.م</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Kids Section -->
+<section id="kids" class="category-section">
+  <h2 class="section-title" data-key="kids-title">🧸 ملابس أطفالي</h2>
+  <div class="products-grid">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Kids/kid1.jpg" alt="Kids T-Shirt">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-kids-1">أوفرول دب بني</h3>
+        <div class="product-colors">
+          <span class="color yellow"></span>
+          <span class="color blue"></span>
+          <span class="color red"></span>
+        </div>
+        <div class="product-sizes">
+          <span>4-6</span>
+          <span>8-10</span>
+          <span>12-14</span>
+        </div>
+        <p class="product-price">79 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Kids/kid2.jpg" alt="Kids Dress">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-kids-2">سالوبيت دب شتوي</h3>
+        <div class="product-colors">
+          <span class="color pink"></span>
+          <span class="color purple"></span>
+          <span class="color yellow"></span>
+        </div>
+        <div class="product-sizes">
+          <span>4-6</span>
+          <span>8-10</span>
+          <span>12-14</span>
+        </div>
+        <p class="product-price">129 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Kids/kid3.jpg" alt="Kids Pants">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-kids-3">جاكيت أزرق مبطن</h3>
+        <div class="product-colors">
+          <span class="color blue"></span>
+          <span class="color gray"></span>
+          <span class="color beige"></span>
+        </div>
+        <div class="product-sizes">
+          <span>4-6</span>
+          <span>8-10</span>
+          <span>12-14</span>
+        </div>
+        <p class="product-price">99 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Kids/kid4.jpg" alt="Kids Jacket">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-kids-4">سويتر ثعلب كاجوال</h3>
+        <div class="product-colors">
+          <span class="color red"></span>
+          <span class="color blue"></span>
+          <span class="color green"></span>
+        </div>
+        <div class="product-sizes">
+          <span>4-6</span>
+          <span>8-10</span>
+          <span>12-14</span>
+        </div>
+        <p class="product-price">189 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Kids/kid5.jpg" alt="Kids Pajamas">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-kids-5">	سويتر رجل الثلج</h3>
+        <div class="product-colors">
+          <span class="color blue"></span>
+          <span class="color pink"></span>
+          <span class="color green"></span>
+        </div>
+        <div class="product-sizes">
+          <span>4-6</span>
+          <span>8-10</span>
+          <span>12-14</span>
+        </div>
+        <p class="product-price">109 ج.م</p>
+      </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="Pic/Kids/kid6.jpg" alt="Kids Set">
+      </div>
+      <div class="product-info">
+        <h3 data-key="product-kids-6">سويتر غزال أحمر</h3>
+        <div class="product-colors">
+          <span class="color gray"></span>
+          <span class="color navy"></span>
+          <span class="color black"></span>
+        </div>
+        <div class="product-sizes">
+          <span>4-6</span>
+          <span>8-10</span>
+          <span>12-14</span>
+        </div>
+        <p class="product-price">159 ج.م</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-social">
+    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://wa.me/201500000000" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  <p data-key="footer">© 2026 زياد أيمن – جميع الحقوق محفوظة</p>
+</footer>
+
+<!-- Back to Top -->
+<button id="backToTop">↑</button>
+
+<script src="brand.js"></script>
+</body>
+</html>
