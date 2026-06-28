@@ -973,6 +973,12 @@ body[dir="ltr"] #backToTop {
   .product-price {
     font-size: 20px;
   }
+  .dark-mode .nav-links a {
+  color: #000000;
+  }
+  .dark-mode .nav-links{
+    background-color: #0c3966;
+  }
 }
 .nav-actions {
   display: flex;
@@ -989,6 +995,7 @@ body[dir="ltr"] #backToTop {
   padding: 5px;
   margin-right: 0; 
 }
+
 
 @media (max-width: 768px) {
   .menu-toggle {
