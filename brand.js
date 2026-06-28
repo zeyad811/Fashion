@@ -42,7 +42,8 @@ const translations = {
     "hero-name2": "أناقة لا تُضاهى لجميع الأعمار",
     "hero-p": "اكتشف تشكيلتنا الفريدة من الملابس العصرية بأجود الخامات وأفضل الأسعار.",
     "hero-btn1": "تسوق الآن",
-    "hero-btn2": "تواصل معنا",
+    "hero-btn2": "معرفة العروض",
+    "hero-btn3": "تواصل معنا",
     
     "contact-title": "تواصل معنا",
     "contact-desc": "نحن هنا لمساعدتك! تواصل معنا عبر أي من القنوات التالية",
@@ -111,7 +112,8 @@ const translations = {
     "hero-name2": "Unmatched Elegance for All Ages",
     "hero-p": "Discover our unique collection of modern clothing with premium quality and best prices.",
     "hero-btn1": "Shop Now",
-    "hero-btn2": "Contact Us",
+    "hero-btn2": "Show Offers",
+    "hero-btn3": "Contact Us",
     
     "contact-title": "Contact Us",
     "contact-desc": "We are here to help! Reach us through any of the following channels",
